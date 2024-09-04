@@ -1,0 +1,1361 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+:root {
+  /* --fy-color: #0b1315; */
+  --fy-color: #0b1315ed;
+}
+
+/* Global Css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #f6f1e1;
+  overflow-x: hidden;
+}
+
+#root {
+  height: 100%;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  font-family: "Montserrat";
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+textarea {
+  white-space: revert;
+}
+
+[type="file"] {
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+.d-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.d-flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+select option {
+  padding: 22px 0 !important;
+  margin: 10px 0 !important;
+  overflow: visible !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Global Css */
+
+/* Header Css */
+.fy-bg {
+  background-color: var(--fy-color);
+}
+
+.fy-socials ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fy-icon {
+  color: #cdccd2;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ffffff7d;
+  border-radius: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+}
+
+.fy-address address,
+.fy-address p {
+  color: #cdccd2;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  font-style: italic;
+}
+
+.fy-address address i,
+.fy-address p i {
+  color: #ffffffc7;
+  margin-right: 10px;
+  font-style: italic;
+}
+
+.fy-logo {
+  color: #e6c8be;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fy-logo img {
+  width: 70% !important;
+}
+
+.fy-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fy-nav ul li {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.fy-nav ul li:hover {
+  border-bottom: 5px solid #e6c8be;
+  color: #e6c8be;
+}
+
+.fy-nav ul .active {
+  border-bottom: 5px solid #e6c8be !important;
+  color: #e6c8be !important;
+}
+
+/* Header Css */
+
+/* Slider Css */
+/* .slider {
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+} */
+.slider {
+  position: relative !important;
+}
+
+.swiper {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.swiper .swiper-slider-bar {
+  height: 500px !important;
+  position: relative !important;
+  background-repeat: no-repeat;
+}
+
+.slick .swiper-slider-bar img {
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.fy-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #000000a8;
+  z-index: 9;
+  padding-bottom: 80px;
+}
+
+.fy-caption-header h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+}
+
+.fy-caption-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ffffffcf;
+  text-align: center;
+  font-weight: 500;
+}
+
+.fy-caption-buttons a {
+  margin: 0 10px;
+}
+
+.fy-caption-buttons .book-table {
+  background: #715b3e;
+  color: white;
+  padding: 14px 30px;
+  font-size: 18px;
+  border-radius: 2px;
+  border: 1px solid #715b3e;
+}
+
+.fy-caption-buttons .book-event {
+  background: #ffffff00;
+  color: white;
+  padding: 14px 30px;
+  font-size: 18px;
+  border-radius: 2px;
+  border: 1px solid white;
+}
+
+.fy-caption-footer {
+  margin-top: 70px;
+}
+
+/* Slider Css */
+
+/* Booking Css */
+.booking {
+  position: absolute;
+  top: 100%;
+  width: 75%;
+  height: 150px;
+  background: var(--fy-color);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9;
+  /* border:1px solid #be8a40; */
+}
+
+.booking form select,
+.booking form input {
+  background: #0b1315;
+  color: white;
+  border: 1px solid #715b3e;
+  font-size: 15px;
+  width: 250px;
+  font-weight: 200;
+  padding: 10px 15px;
+  line-height: 0;
+  height: 50px;
+  margin: 0 5px;
+}
+
+.booking form button {
+  background: none;
+  color: white;
+  border: 1px solid #715b3e;
+  font-size: 15px;
+  width: 120px;
+  font-weight: 200;
+  padding: 10px 15px;
+  line-height: 0;
+  height: 49px;
+  margin: 0 5px;
+}
+
+/* Booking Css */
+
+/* Timing Css */
+.fy-section {
+  margin-top: 100px;
+  color: #fff;
+  background-color: #0f1d22;
+  padding: 100px 0;
+}
+
+.fy_opening_hours,
+.fy_about {
+  padding: 0 20px;
+}
+
+.fy_banner {
+  position: relative;
+  width: 350px;
+  height: 460px;
+}
+
+.fy-image-cover > img {
+  object-fit: cover;
+}
+
+.fy-image-cover > img,
+.fy-image-contain > img,
+.fy-image-fill > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-position: center center;
+}
+
+.fy-widget-centerer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 35px;
+  transition-property: all;
+  transition-duration: 0.8s;
+  transition-timing-function: ease;
+  z-index: 9;
+  background: rgba(62, 56, 62, 0.6);
+}
+
+.fy-widget-title {
+  font-size: 21px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.fy-widget-content p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 20px 0 30px 0;
+  color: #ffffffe6;
+  text-align: center;
+}
+
+.fy-button-container a,
+.fy-button-bordered {
+  background: #ffffff00;
+  color: white;
+  padding: 14px 30px;
+  font-size: 18px;
+  border-radius: 2px;
+  border: 1px solid white;
+}
+
+.hr {
+  width: 100%;
+  border-bottom: 1px solid #ffffff38;
+  margin-top: 15px;
+}
+
+.hr-row {
+  width: 100%;
+  border-bottom: 1px solid #7f7f7f1f;
+  margin: 10px 0;
+}
+
+/* Timing Css */
+
+/* Product Css */
+.product {
+  background: white;
+  padding: 20px;
+  margin-top: 150px;
+  border: 1px solid;
+  border-color: #e5e5e5;
+  border-radius: 25px;
+  width: 100%;
+  height: auto;
+}
+
+.product-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 25px;
+  transition: all 0.8s;
+}
+
+.product-image img:hover {
+  transform: scale(1.1);
+}
+
+.product-block .product-caption {
+  padding: 30px;
+  display: inline-block;
+  width: 100%;
+}
+
+.woocommerce-loop-product__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 6px;
+}
+
+.woocommerce-loop-product__title a {
+  color: #4f1413;
+}
+
+.product-caption {
+  margin-top: 40px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  color: #715b3e;
+  margin-top: 15px;
+}
+
+.screen-reader-text {
+  line-height: 1.5;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #00000099;
+  font-size: 15px;
+  width: 70% !important;
+}
+
+/* Product Css */
+
+/* Footer Css */
+footer {
+  color: #fff;
+  background-color: var(--fy-color);
+  padding: 70px 0;
+  margin-top: auto;
+}
+
+.footer-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-nav ul li {
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  margin: 0 20px;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  transition: all 0.2s;
+  margin-top: 40px;
+  padding-bottom: 3px;
+  position: relative;
+  text-align: center;
+}
+
+.copyright-section {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.705);
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+/* Footer Css */
+
+.single-product-img {
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single-product-img img {
+  border-radius: 30px;
+}
+
+.single-product-details {
+  width: 700px;
+  height: auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 80px;
+}
+
+.item-hr {
+  width: 100%;
+  border-bottom: 1px solid #00000012;
+  margin-bottom: 30px;
+}
+
+.single-product-details h2 {
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 600;
+  clear: both;
+  margin: 0 0 0.5407911001em;
+  color: #4f1413;
+}
+
+.single-product-details .price {
+  font-size: 35px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0 0 0.5407911001em;
+  color: #ffc222;
+  /* margin-bottom: 40px; */
+}
+
+.single-product-details .count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 20px;
+  border: 1px solid #4f1413;
+}
+
+.single-product-details .catagory {
+  font-size: 13px;
+  color: #4f1413;
+  margin-top: 50px;
+  font-weight: 400;
+}
+
+.single-product-details .catagory p {
+  margin-bottom: 3px;
+}
+
+.single-product-details .catagory p strong,
+.single-product-details .catagory p i {
+  margin-left: 5px;
+}
+
+.single-product-details .count i {
+  color: #4f1413;
+}
+
+.single-product-details .count input {
+  width: 35px;
+  border-radius: 2px;
+  border: none;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid #4f1413;
+  border-top: none;
+  border-bottom: none;
+  background-color: #ffffff00;
+}
+
+.single-product-details .count input::placeholder {
+  color: #4f1413;
+  text-align: center;
+}
+
+.single-product-details button {
+  border: none;
+  background-color: #ffc222;
+  border-radius: 10px;
+  padding: 10px;
+  color: #4f1413;
+  width: 300px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Extra Small Devices (Portrait Phones) */
+@media (min-width: 350px) and (max-width: 400px) {
+  .booking form select, .booking form input {
+      width: 80%;
+  }
+
+  .booking form button {
+      width: 80%;
+  }
+
+  .dish-img img {
+    width: 100%;
+    height: 100% !important;
+  }
+  .fy-logo img {
+    width: 100% !important;
+  }
+  .fy-nav ul li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    transition: all 0.2s;
+    border-bottom: 1px solid #c9ab8140;
+    padding: 10px;
+  }
+
+  .fy-nav ul li:hover {
+    border-bottom: 1px solid #c9ab8140 !important;
+  }
+
+  .fy-nav ul .active {
+    border-bottom: 1px solid #c9ab8140 !important;
+    color: white !important;
+  }
+
+  .fy-nav ul {
+    display: block;
+    width: 100%;
+  }
+
+  .icon-nav {
+    color: white;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    border: 1px solid;
+    font-size: 20px;
+  }
+
+  .mobile-navigation {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 99;
+  }
+
+  .fy-caption-footer {
+    margin-top: 40px;
+  }
+
+  .fy-caption-header h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .fy-caption-content p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .fy-caption-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fy-caption-buttons .book-table {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  .fy-caption-buttons .book-event {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  .slick .slick-slider-bar {
+    height: 400px !important;
+    position: relative !important;
+  }
+
+  .fy-caption {
+    padding-bottom: 0px;
+  }
+
+  .booking {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    left: 0%;
+    transform: translate(0%, 0%);
+    display: block;
+    height: 380px;
+  }
+
+  .booking form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0;
+  }
+
+  .product {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .fy-section {
+    padding: 100px 0;
+  }
+
+  .fy_banner {
+    width: 340px;
+    height: 305px;
+  }
+
+  .fy-widget-content p {
+    font-size: 15px;
+  }
+
+  .fy_opening_hours,
+  .fy_about {
+    font-size: 14px;
+  }
+
+  .footer-nav ul {
+    flex-flow: wrap;
+    margin-top: 28px;
+  }
+
+  .footer-nav ul li {
+    margin-top: 10px;
+  }
+
+  .single-product-img {
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    background-color: #ffffff00;
+  }
+
+  .single-product-details {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .single-product-details h2 {
+    font-size: 40px;
+  }
+
+  .single-product-details button {
+    width: 210px;
+    margin-left: 38px;
+  }
+
+  .single-product-details h2 {
+    font-size: 42px;
+  }
+
+  .single-product-details .count {
+    width: 98px;
+  }
+
+  .single-product-details {
+    padding-left: 30px;
+  }
+
+  .margin-top-mobile {
+    margin-top: 100px;
+  }
+
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Small Devices (Phones) */
+@media (min-width: 401px) and (max-width: 480px) {
+
+.booking form select, .booking form input {
+      width: 80%;
+  }
+
+  .booking form button {
+      width: 80%;
+  }
+  .dish-img img {
+    width: 100%;
+    height: 100% !important;
+  }
+  .fy-logo img {
+    width: 100% !important;
+  }
+  .fy-nav ul li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    transition: all 0.2s;
+    border-bottom: 1px solid #c9ab8140;
+    padding: 10px;
+  }
+  .fy-nav ul li:hover {
+    border-bottom: 1px solid #c9ab8140 !important;
+  }
+
+  .fy-nav ul .active {
+    border-bottom: 1px solid #c9ab8140 !important;
+    color: white !important;
+  }
+
+  .fy-nav ul {
+    display: block;
+    width: 100%;
+  }
+
+  .icon-nav {
+    color: white;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    border: 1px solid;
+    font-size: 20px;
+  }
+
+  .mobile-navigation {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 99;
+  }
+
+  .fy-caption-footer {
+    margin-top: 40px;
+  }
+
+  .fy-caption-header h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .fy-caption-content p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .fy-caption-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fy-caption-buttons .book-table {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  .fy-caption-buttons .book-event {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  .slick .slick-slider-bar {
+    height: 400px !important;
+    position: relative !important;
+  }
+
+  .fy-caption {
+    padding-bottom: 0px;
+  }
+
+  .booking {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    left: 0%;
+    transform: translate(0%, 0%);
+    display: block;
+    height: 380px;
+  }
+
+  .booking form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0;
+  }
+
+  .product {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .fy-section {
+    padding: 100px 0;
+  }
+
+  .fy_banner {
+    width: 340px;
+    height: 305px;
+  }
+
+  .fy-widget-content p {
+    font-size: 15px;
+  }
+
+  .fy_opening_hours,
+  .fy_about {
+    font-size: 14px;
+  }
+
+  .footer-nav ul {
+    flex-flow: wrap;
+    margin-top: 28px;
+  }
+
+  .footer-nav ul li {
+    margin-top: 10px;
+  }
+
+  .single-product-img {
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    background-color: #ffffff00;
+  }
+
+  .single-product-details {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .single-product-details h2 {
+    font-size: 40px;
+  }
+
+  .single-product-details button {
+    width: 210px;
+    margin-left: 38px;
+  }
+
+  .single-product-details h2 {
+    font-size: 42px;
+  }
+
+  .single-product-details .count {
+    width: 98px;
+  }
+
+  .single-product-details {
+    padding-left: 30px;
+  }
+
+  .margin-top-mobile {
+    margin-top: 100px;
+  }
+
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Medium Devices (Tablets in Portrait Mode) */
+@media (min-width: 481px) and (max-width: 767px) {
+  .booking form select, .booking form input {
+      width: 80%;
+  }
+
+  .booking form button {
+      width: 80%;
+  }
+  .dish-img img {
+    width: 100%;
+    height: 100% !important;
+  }
+  .fy-logo img {
+    width: 100% !important;
+  }
+  .fy-nav ul li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    font-weight: 300;
+    font-size: 16px;
+    transition: all 0.2s;
+    border-bottom: 1px solid #c9ab8140;
+    padding: 10px;
+  }
+
+  .fy-nav ul li:hover {
+    border-bottom: 1px solid #c9ab8140 !important;
+  }
+
+  .fy-nav ul .active {
+    border-bottom: 1px solid #c9ab8140 !important;
+    color: white !important;
+  }
+
+  .fy-nav ul {
+    display: block;
+    width: 100%;
+  }
+
+  .icon-nav {
+    color: white;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    border: 1px solid;
+    font-size: 20px;
+  }
+
+  .mobile-navigation {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 99;
+  }
+
+  .fy-caption-footer {
+    margin-top: 40px;
+  }
+
+  .fy-caption-header h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .fy-caption-content p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .fy-caption-buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fy-caption-buttons .book-table {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  .fy-caption-buttons .book-event {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    text-align: center;
+  }
+
+  .slick .slick-slider-bar {
+    height: 400px !important;
+    position: relative !important;
+  }
+
+  .fy-caption {
+    padding-bottom: 0px;
+  }
+
+  .booking {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    left: 0%;
+    transform: translate(0%, 0%);
+    display: block;
+    height: 380px;
+  }
+
+  .booking form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0;
+  }
+
+  .product {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  .fy-section {
+    padding: 100px 0;
+  }
+
+  .fy_banner {
+    width: 340px;
+    height: 305px;
+  }
+
+  .fy-widget-content p {
+    font-size: 15px;
+  }
+
+  .fy_opening_hours,
+  .fy_about {
+    font-size: 14px;
+  }
+
+  .footer-nav ul {
+    flex-flow: wrap;
+    margin-top: 28px;
+  }
+
+  .footer-nav ul li {
+    margin-top: 10px;
+  }
+
+  .single-product-img {
+    height: 350px;
+    width: 350px;
+    border-radius: 100%;
+    background-color: #ffffff00;
+  }
+
+  .single-product-details {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .single-product-details h2 {
+    font-size: 40px;
+  }
+
+  .single-product-details button {
+    width: 210px;
+    margin-left: 38px;
+  }
+
+  .single-product-details h2 {
+    font-size: 42px;
+  }
+
+  .single-product-details .count {
+    width: 98px;
+  }
+
+  .single-product-details {
+    padding-left: 30px;
+  }
+
+  .margin-top-mobile {
+    margin-top: 100px;
+  }
+
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Large Devices (Tablets in Landscape Mode and Smaller Laptops) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Adjustments for tablets in landscape mode and smaller laptops */
+}
+
+/* Extra Large Devices (Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Sticky Navbar */
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #0f1d22;
+    padding-top: 20px;
+  }
+}
+
+/* Ultra Large Devices (Large Desktops) */
+@media (min-width: 1200px) {
+  /* Sticky Navbar */
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #0f1d22;
+    padding-top: 20px;
+  }
+}
